@@ -1,0 +1,527 @@
+@charset "UTF-8";
+
+
+body {
+  font-family: 'Bebas Neue', cursive;
+	background-color: #262525;
+	width: 1440px;
+		box-sizing : border-box;
+}
+
+img{
+  vertical-align: bottom;
+  width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* fv */
+.fv {
+  height: 810px;
+	width: 100%;
+	position: relative;
+}
+
+.fv-bgi {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.column{
+	height: 810px;
+}
+
+.column-left{
+	width: 560px;
+	background-color: black;
+}
+
+.column-right {
+	width: 880px;
+	background: url("img/fv.png") no-repeat top center;
+	background-size: cover;
+}
+
+.lead {
+	position: absolute;
+	top:203px;
+	left:134px;
+	width: 354px;
+	height: 451px;
+}
+
+h1 {
+	font-size: 152px;
+	color: #fff;
+  letter-spacing: 15px;
+	line-height: 1;
+	text-align: left;
+}
+
+/* menu */
+
+.header-menu, .news-bar{
+	display: flex;
+}
+
+.scl-btn img {
+	width: 49px;
+	height: 62.4px;
+}
+
+.scl-btn {
+	padding: 0 45px;
+	position: absolute;
+	top:732px;
+}
+
+.news-bar{
+	width: 1160px;
+	height: 83px;
+	position: absolute;
+	top:715px;
+	left: 140px;
+	align-items: center;
+	background-color: #fff;
+}
+
+.news {
+	width: 46px;
+	color: #B92013;
+	font-size: 23px;
+	letter-spacing: 2.3px;
+	line-height: 28px;
+	padding-left: 36px;
+}
+
+.date {
+	width: 72px;
+	color:#7E7E7E;
+	font-size: 16px;
+	letter-spacing: 1.6px;
+	line-height: 19px;
+	padding:0 40px;
+}
+
+.news-text {
+	font-family: 'Roboto', sans-serif;
+	color:#222222;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.news-inner{
+	display: flex;
+}
+
+/*           */
+/* works */
+/*           */
+
+.works {
+	height: 1066px;
+	width: 100%;
+	background-color: #262525;
+	color: #fff;
+}
+
+.works-inner {
+	max-width: 1160px;
+	height: 916px;
+	width: 100%;
+	margin: 150px auto;
+}
+
+h2 {
+	width: 191px;
+	height: 75px;
+	font-size: 75px;
+	letter-spacing: 7.5px;
+	line-height: 1;
+	font-weight: bold;
+	padding-bottom: 116px;
+}
+
+.works-l img {
+	width: 571px;
+	height: 353px;
+}
+
+.works-r img {
+	width: 572px;
+}
+
+.works-img{
+	display: flex;
+	justify-content: space-between;
+}
+
+.n-a img {
+	padding-bottom: 17px;
+}
+
+.nail img {
+	padding-bottom: 28px;
+}
+
+.img-right p{
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 24px;
+	padding-top: 150px;
+	text-align: right;
+}
+
+.click-img {
+	width: 32px;
+	height: 35px;
+	padding-left: 20px;
+}
+
+
+/* モーダルCSS */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: #222222; opacity: 0.9;
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 70%;
+  max-width: 797px;
+  background-color: #222222;
+}
+
+.modalContents h3{
+	font-size: 20px;
+	padding-top: 53px;
+}
+
+.modalContents h4{
+	font-size: 16px;
+	line-height: 21px;
+	padding-top: 15px;
+}
+
+.closeModal {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  cursor: pointer;
+}
+
+.closeModal img {
+	width: 32px;
+	height: 32px;
+}
+
+
+/*                 */
+/* accordion */
+/*                 */
+
+.accordion {
+	height: 810px;
+	background-color: #5B0D07;
+	color: #fff;
+}
+
+.accordion-inner {
+	width: 1140px;
+	margin: 0 150px;
+	padding:160px 0;
+}
+
+.accordion-inner h2 {
+	width: 766px;
+	height: 75px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.ac-items {
+	width: 1140px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+/* accordion menu */
+
+.ac-items{
+	padding-bottom: 40px;
+}
+
+.ac-items:last-of-type{
+	padding-bottom: 20px;
+}
+
+.triger{
+	width: 1140px;
+	height: 30px;
+}
+
+.btn-more {
+  width: 24px;
+  text-align: center;
+  cursor: pointer;
+	margin: 0 auto;
+
+	transition: all 0.2s ease-in-out;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: solid 2px #fff;
+	border-right: solid 2px #fff;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+ 
+.btn-more.open{
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 100%;
+}
+ 
+.dropdown {
+	display: none;
+}
+
+.accordion-inner p{
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 32px;
+	padding-top: 30px;
+	text-align: center;
+}
+ 
+
+
+
+
+
+
+/* レスポンシブ */
+
+@media screen and (max-width:750px) {
+ body {
+	 width: 750px;
+	 max-width: 100%;
+ }
+
+	.fv {
+		height: 1334px;
+	}
+	.column{
+		width: 750px;
+		height: 1334px;
+	}
+
+	.column-left {
+		width: 45%;
+	}
+
+	.column-right {
+		background-size:auto 1334px;
+		background-position: -70px;
+		width: 55%;
+	}
+
+	.lead {
+		position: absolute;
+		top:514px;
+		left:45px;
+		width: 233px;
+		height: 322px;
+	}
+
+	.lead h1{
+		font-size: 100px;
+	}
+
+	.scl-btn img {
+		width: 66px;
+		height: 88.4px;
+	}
+	
+	.scl-btn {
+		padding:0;
+		position: absolute;
+		top:1036px;
+	 	left:55px;
+	}
+
+	.news-bar{
+		width: 650px;
+		height: 159px;
+		position: absolute;
+		top:1155px;
+		left: 5%;
+		align-items: flex-start;
+	}
+
+	.news-inner {
+		display: flex;
+		flex-direction: column;
+		width: 503px;
+		height: 95px;
+		padding-top: 34px;
+	}
+
+	.news {
+		padding:30px 30px 0px 30px;
+		font-size: 28px;
+		letter-spacing: 2.8px;
+		line-height: 33px;
+		width: 56px;
+		height: 33px;
+	}
+
+	.date {
+		width: 108px;
+		height: 29px;
+		padding:0;
+		padding-bottom: 4px;
+		font-size: 24px;
+		letter-spacing: 2.4px;
+		line-height: 29px;
+	}
+
+	.news-text {
+		font-size:24px;
+		line-height: 30px;
+	}
+
+
+	/* works */
+	.works{
+		height: 2209px;
+
+	}
+	
+	.works-inner {
+		margin:0;
+		width: 670px;
+		padding:96px 40px 99px;
+		height: 2013px;
+	}
+	
+	.works-img{
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	h2{
+		padding-bottom: 60px;
+		font-size: 80px;
+		line-height: 80px;
+		height: 80px;
+	}
+
+	.works-l img, .works-r img {
+		width: 670px;
+		height: 414px;
+		padding:0;
+		margin-bottom: 40px;
+	}
+
+	.img-right p{
+		font-size: 30px;
+		letter-spacing: 3px;
+		line-height: 52px;
+		padding-top: 10px;
+	}
+
+	.click-img {
+		width: 47px;
+		height: 52px;
+	}
+
+	/* モダール */
+	.modalWrapper {
+		position: absolute;
+		top: 50%;
+		left: 51%;
+		transform:translate(-50%,-50%);
+		width: 100%;
+		max-width: 720px;
+	}
+
+	.modalContents img{
+		width: 710px;
+	}
+
+	.closeModal img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.closeModal {
+		position: absolute;
+		top: -2rem;
+		right: 0rem;
+	}
+
+	.modalContents h3{
+		font-size: 26px;
+		padding-top: 30px;
+	}
+
+	.modalContents h4{
+		font-size: 24px;
+		padding-top: 14px;
+	}
+
+	/* accordion */
+	.accordion {
+		width: 100%;
+	}
+	.accordion-inner{
+		width: 634px;
+		padding:155px 58px;
+		margin:0;
+	}
+
+	.accordion-inner h2{
+		font-size: 60px;
+		letter-spacing: 6px;
+		width: 100%;
+	}
+
+
+	.ac-items, .triger{
+		width: 634px;
+		width: 100%;
+
+	}
+
+}
